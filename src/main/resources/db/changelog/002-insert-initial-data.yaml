@@ -1,0 +1,58 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: your-name
+      changes:
+        - insert:
+            tableName: app_user
+            columns:
+              - column:
+                  name: username
+                  value: Alice
+              - column:
+                  name: balance
+                  value: 1000.0
+        - insert:
+            tableName: app_user
+            columns:
+              - column:
+                  name: username
+                  value: Bob
+              - column:
+                  name: balance
+                  value: 500.0
+
+  - changeSet:
+      id: 4
+      author: your-name
+      changes:
+        - insert:
+            tableName: nft
+            columns:
+              - column:
+                  name: name
+                  value: CryptoKitty
+              - column:
+                  name: description
+                  value: A cute digital cat
+              - column:
+                  name: price
+                  value: 100.0
+              - column:
+                  name: owner_id
+                  value: null
+        - insert:
+            tableName: nft
+            columns:
+              - column:
+                  name: name
+                  value: DigitalArt
+              - column:
+                  name: description
+                  value: Abstract art piece
+              - column:
+                  name: price
+                  value: 200.0
+              - column:
+                  name: owner_id
+                  value: null
